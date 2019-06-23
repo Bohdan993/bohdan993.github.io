@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Price off</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="build/css/intlTelInput.css">
+	<link rel="stylesheet" href=css/main.min.css>
+</head>
+<body>
+
+
+
+
+	
+		<section class="main_section">
+
+			<div class="center">
+
+				<div class="flex-container">
+					<div class="wrap_content">
+						<div class="top_content">
+						
+					<h1> Забронируйте за собой <br><span>скидку в размере -5%<span> </h1>
+					<p>
+						на любой пакет прохождения<br>
+						обучающей программы:
+					</p>
+					<div class="top_content-sum">
+						<div class="sum_title">
+							Сумма брони:
+						</div>
+						<div class="sum_cards-wrap">
+							<div class="sum_cards effects">
+								<img src="img/$.svg" alt="">
+								<p>50</p>
+								<div class="effect">	</div>
+							</div>
+							<div class="sum_cards effects">
+								<img src="img/grn.svg" alt="">
+								<p>1300</p>
+								<div class="effect">	</div>
+							</div>
+							<div class="sum_cards effects ">
+								<div class="effect">	</div>		
+								<img src="img/rur.svg" alt="">
+								<p>3000</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom_content">
+					<div class="content_button">
+					<a href="#modal_form" class="open_modal" id="go">
+						<span>Забронировать участие</span>
+					</a>
+					<p>
+						В примечаниях укажите свой E-Mail адрес 
+						и наш менеджер свяжется с Вами
+					</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		
+
+		
+
+	<div id="modal_form"><!-- Сaмo oкнo --> 
+	<div class="wrap_close">
+      <span id="modal_close"></span> <!-- Кнoпкa зaкрыть --> 
+      </div>
+     <div class="modal_content">
+     		<div class="numbers-form-wrapper">
+						
+						<h2>Забронировать участие</h2>
+
+						<form action="javascript:void(0);" class="numbers-form" id="numbers-form" method="post" name="numbers-form" onsubmit="">
+							<span>Ваше имя</span>
+							<div class="input-wrapper">
+								
+							<input class="text-field" name="name" placeholder="Введите ваше имя" type="text" required> 
+							</div>
+							<span>Ваш телефон</span>
+							<div class="input-wrapper">
+								
+							<input class="text-field" type="tel" placeholder="" id="telephone"  required> 
+							</div>
+							<span>Ваш email</span>
+							<div class="input-wrapper">
+								
+							<input class="text-field" name="mail" placeholder="Введите ваш email" type="text"> 
+							</div>
+							
+						<!-- 	<a href="#" id="go" class="open_modal"> -->
+							<input id="go" class="btn numbers_btn open_modal" type="submit"  value="Забронировать участие">
+							<!-- </a> -->
+						</form>
+					</div>
+     </div>			
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+	
+<script src="js/jquery.min.js"></script>
+<script src="build/js/intlTelInput-jquery.min.js"></script>
+<script src="js/libs/libs.min.js"></script>
+<script src="js/script.min.js"></script>
+
+
+
+
+</body>
+</html>
