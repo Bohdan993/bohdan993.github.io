@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Some description">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:title" content="Zoom | private office widget">
+    <meta property="og:description" content="Some description">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zoom | private office widget">
+    <meta name="twitter:description" content="Some description">
+    <title>Zoom | private office widget</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css?v=1570041626520">
+    <link rel="stylesheet" href="css/main.min.css?v=1570041626520">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__layer">
+        <div class="center">
+          <div class="f-container">
+            <div class="header-user">
+              <label class="header-user__ava">
+                <input type="file">
+                <svg>
+                  <use xlink:href="/img/sprites/svg/symbol/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <p class="header-user__greeting" href="#">Николь, <br>добро пожаловать в Zoome!</p>
+            </div>
+            <div class="header-links"><a class="header-link" href="#">Главная</a><a class="header-link" href="#">Выход  </a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="loader-wrapper">
+        <div class="loader-circle">
+          <svg class="loader-circle-inner" viewbox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="15" fill="none" stroke-width="4"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="greeting current-step" data-step="step0">
+        <div class="greeting__layer">
+          <div class="center">
+            <div class="f-container">
+              <div class="step1__greeting">
+                <div class="step1__greeting-img"><img src="img/robot1.svg" alt="Robot"></div>
+                <div class="step1__greeting-text">
+                  <p class="step1__greeting-paragraph"> — Рад встрече, меня зовут <span class="step1__greeting_bold">Zoome-бот, </span>по мнению <br><span class="step1__greeting_semibold">Russian Ad Solution лучший рекламный инструмент 2019 года. </span></p>
+                  <p class="step1__greeting-paragraph">Я буду Вашим персональным помощником по работе в системе. <br>Для того, чтобы получать новых клиентов, Вам необходимо пройти всего 3 шага! Вы готовы? </p>
+                </div>
+              </div>
+              <button class="main-btn greeting-btn" type="button" data-btn="step-btn">Cтарт</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress__layer">
+          <div class="center">
+            <div class="f-conteiner">
+              <div class="steps-progress">
+                <div class="mobile-text">
+                  <p class="steps-progress__title-mob" data-part="part1">Отлично! Первый шаг пройден</p>
+                  <p class="steps-progress__title-mob" data-part="part2">Самый главный шаг выполнен!</p>
+                  <p class="steps-progress__title-mob" data-part="part3">Вы оплатили и все настроили!</p>
+                </div>
+                <div class="steps-progress__part" data-part="part1">
+                  <p class="steps-progress__title">Отлично! Первый шаг пройден</p><span><span class="color"></span></span>
+                  <h4 class="step-progress__count">01.</h4>
+                </div>
+                <div class="steps-progress__part" data-part="part2">
+                  <p class="steps-progress__title">Самый главный шаг выполнен!</p><span><span class="color"></span></span>
+                  <h4 class="step-progress__count">02.</h4>
+                </div>
+                <div class="steps-progress__part" data-part="part3">
+                  <p class="steps-progress__title">Вы оплатили и все настроили!</p><span><span class="color"></span></span>
+                  <h4 class="step-progress__count">03.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step1 current-step" data-step="step1">
+        <div class="step1__layer">
+          <div class="center">
+            <div class="f-container">
+              <div class="step1__acquaintance">
+                <div class="step1__acquaintance_left">
+                  <div class="step1-wrap">
+                    <h3 class="step1-count">01.</h3><img src="img/robot1.svg" alt="Robot">
+                  </div>
+                  <p class="step1-text">—  Итак, давайте познакомимся поближе. Заполните данные о своем предприятии:</p>
+                </div>
+                <div class="step1__acquaintance_right"><img src="img/working-place.jpg" alt="Working Place"></div>
+              </div>
+              <form class="step1__form" id="step1__form">
+                <div class="step1__form-wrap">
+                  <div class="step1__form-group">
+                    <p class="form-group__title">Название предприятия:</p>
+                    <label class="form-label">
+                      <svg>
+                        <use xlink:href="/img/sprites/svg/symbol/sprite.svg#home"></use>
+                      </svg>
+                      <input class="form-input" type="text" placeholder="Югмедиапродукт" name="name" required data-error="1">
+                    </label><span class="warning">Введите название</span>
+                  </div>
+                  <div class="step1__form-group">
+                    <p class="form-group__title">Ваш бизнес-аккаунт в Instagram:</p>
+                    <label class="form-label">
+                      <svg>
+                        <use xlink:href="/img/sprites/svg/symbol/sprite.svg#inst"></use>
+                      </svg>
+                      <input class="form-input" type="text" placeholder="Пример: @zoome-russia" name="name" required data-error="1">
+                    </label><span class="warning">Введите корректный аккаунт Instagram</span>
+                  </div>
+                </div>
+                <div class="step1__form-wrap">
+                  <div class="step1__form-group">
+                    <p class="form-group__title">Город/населенный пункт:</p>
+                    <label class="select-label form-label">
+                      <svg>
+                        <use xlink:href="/img/sprites/svg/symbol/sprite.svg#town"></use>
+                      </svg>
+                      <select class="form-input city" name="city" id="city" data-error="1">
+                        <option value="" disabled selected>Ваш город</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Новосибирск">Новосибирск</option>
+                        <option value="Нижний Новгород">Нижний Новгород</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                        <option value="Казань">Казань</option>
+                        <option value="Уфа">Уфа</option>
+                        <option value="Воронеж">Воронеж</option>
+                        <option value="Омк">Омк</option>
+                        <option value="Челябинск">Челябинск</option>
+                      </select>
+                    </label><span class="warning">Выберите город</span>
+                  </div>
+                  <div class="step1__form-group">
+                    <p class="form-group__title">Ваш e-mail:</p>
+                    <label class="form-label">
+                      <svg>
+                        <use xlink:href="/img/sprites/svg/symbol/sprite.svg#letter"></use>
+                      </svg>
+                      <input class="form-input" type="email" placeholder="Пример: info@zoome.pro" name="name" required data-error="1">
+                    </label><span class="warning">Введите корректный e-mail</span>
+                  </div>
+                </div>
+                <button class="main-btn step1-btn" type="button" data-btn="step-btn">Далее</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step2 current-step" data-step="step2">
+        <div class="step2__layer">
+          <div class="center">
+            <div class="f-container">
+              <div class="step2__top">
+                <div class="step2-layer_top">
+                  <p class="step2__paragraph">Эти и еще <span>104 пользователя </span>из Вашего города готовы принять заявку на рекламу <span>прямо сейчас.</span></p>
+                </div>
+                <div class="step2-layer_middle">
+                  <div class="step2__congratulation">
+                    <div class="step2-wrap">
+                      <div class="step2-image__wrap">
+                        <h3 class="step2-count">02.</h3><img src="img/robot2.svg" alt="Robot">
+                      </div>
+                      <p class="step2-text">—  Отлично!</p>
+                      <p class="step2-text"><span class="line">—  </span>По моим подсчетам в базе Zoome находится <span>1327 </span>пользователей из Вашего города.</p>
+                    </div>
+                    <div class="step2-offers">
+                      <div class="step2-offer">
+                        <div class="step2-offer__numbers"><span>
+                            <svg>
+                              <use xlink:href="/img/sprites/svg/symbol/sprite.svg#user-min"></use>
+                            </svg></span>
+                          <p class="number">716</p>
+                        </div>
+                        <p class="step2-offer__description">— подходят вам по целевой аудитории и тематике аккаунтов.</p>
+                      </div>
+                      <div class="step2-offer">
+                        <div class="step2-offer__numbers"><span>
+                            <svg>
+                              <use xlink:href="/img/sprites/svg/symbol/sprite.svg#users-min"></use>
+                            </svg></span>
+                          <p class="number">587 678</p>
+                        </div>
+                        <p class="step2-offer__description">— суммарный рекламный охват.</p>
+                      </div>
+                    </div>
+                    <p class="step2__paragraph mobile-paragraph">Эти и еще <span>104 пользователя  </span>из Вашего города готовы принять заявку на рекламу <span>прямо сейчас.</span></p>
+                  </div>
+                  <div class="step2-bloggers">
+                    <div class="step2__blogger-card"><img src="img/bloger1.jpg" alt="Blogger">
+                      <div class="step2__blogger-wrap">
+                        <p class="step2__blogger-name">Лиза Боне</p>
+                        <div class="step2__blogger-subscribers">
+                          <p class="subscribers">Подписчики:</p>
+                          <p class="subsctibers-number">17 130</p>
+                        </div>
+                        <div class="step2__blogger-location">
+                          <p class="location">Локация</p>
+                          <p class="city">Ставрополь</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step2__blogger-card"><img src="img/bloger2.jpg" alt="Blogger">
+                      <div class="step2__blogger-wrap">
+                        <p class="step2__blogger-name">Наталья Карасёва</p>
+                        <div class="step2__blogger-subscribers">
+                          <p class="subscribers">Подписчики:</p>
+                          <p class="subsctibers-number">12 345</p>
+                        </div>
+                        <div class="step2__blogger-location">
+                          <p class="location">Локация</p>
+                          <p class="city">Ставрополь</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step2__blogger-card"><img src="img/bloger3.jpg" alt="Blogger">
+                      <div class="step2__blogger-wrap">
+                        <p class="step2__blogger-name">Алексей Бирман</p>
+                        <div class="step2__blogger-subscribers">
+                          <p class="subscribers">Подписчики:</p>
+                          <p class="subsctibers-number">6 809</p>
+                        </div>
+                        <div class="step2__blogger-location">
+                          <p class="location">Локация</p>
+                          <p class="city">Ставрополь</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step2__blogger-card"><img src="img/bloger3.jpg" alt="Blogger">
+                      <div class="step2__blogger-wrap">
+                        <p class="step2__blogger-name">Алексей Бирман</p>
+                        <div class="step2__blogger-subscribers">
+                          <p class="subscribers">Подписчики:</p>
+                          <p class="subsctibers-number">6 809</p>
+                        </div>
+                        <div class="step2__blogger-location">
+                          <p class="location">Локация</p>
+                          <p class="city">Ставрополь</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step2__blogger-card"><img src="img/bloger2.jpg" alt="Blogger">
+                      <div class="step2__blogger-wrap">
+                        <p class="step2__blogger-name">Наталья Карасёва</p>
+                        <div class="step2__blogger-subscribers">
+                          <p class="subscribers">Подписчики:</p>
+                          <p class="subsctibers-number">12 345</p>
+                        </div>
+                        <div class="step2__blogger-location">
+                          <p class="location">Локация</p>
+                          <p class="city">Ставрополь</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step2__show-more main-btn">Показать еще</div>
+                </div>
+                <div class="step2-layer_bottom">
+                  <div class="step2-bottom__wrap">
+                    <div class="step2__bg-image"><img src="img/worker.png" alt="Worker"></div><a class="step2__blogger-btn" id="step2__blogger-btn" href="#step2__blogger-btn">О работе с блогерами</a>
+                  </div>
+                </div>
+                <button class="main-btn start-ads" type="button" data-btn="step-btn">Начать рекламу</button>
+                <div class="step2-about__bloggers">
+                  <div class="step2-hidden" id="step2-hidden">
+                    <div class="close-btn"><span></span><span></span></div>
+                    <div class="step2-hidden__card first-hidden"><img src="img/robot1.svg" alt="Robot">
+                      <p class="step2-hidden__text">Мы собрали самых популярных пользователей Instagram из Вашего города и создали максимально комфортные условия для взаимодействия с ними.</p>
+                    </div>
+                    <div class="step2-hidden__card card-reverse">
+                      <p class="step2-hidden__text">Большинство из этих людей готовы работать на бартерной основе, т.е. получать товар/услугу, которые Вы продаете.</p>
+                      <div class="step2-hidden__img">
+                        <svg>
+                          <use xlink:href="/img/sprites/svg/symbol/sprite.svg#arrows"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="step2-hidden__card">
+                      <div class="step2-hidden__img">
+                        <svg>
+                          <use xlink:href="/img/sprites/svg/symbol/sprite.svg#user-success"></use>
+                        </svg>
+                      </div>
+                      <p class="step2-hidden__text">Но если Вам это не подходит, Вы можете сами выбрать подходящий для вас формат оплаты (скидки, сертификаты, денежное вознаграждение).</p>
+                    </div>
+                    <div class="step2-hidden__card card-reverse">
+                      <p class="step2-hidden__text">Все условия Вы обозначаете при создании рекламной заявки.</p>
+                      <div class="step2-hidden__img">
+                        <svg>
+                          <use xlink:href="/img/sprites/svg/symbol/sprite.svg#list"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step3 current-step" data-step="step3">
+        <div class="stepNum__layer">
+          <div class="center">
+            <div class="f-container">
+              <h2 class="step2__gift">Я хочу, чтобы о Вас узнало еще больше людей и <br>совершенно <span>БЕСПЛАТНО </span>даю Вам QR-код для Вашего взаимодействия со своими клиентами! </h2>
+              <div class="step2__qr step2__free-gift">
+                <div class="step2__qr_top step2__free-gift_top">
+                  <div class="step2__qr-img step2__free-gift-img">
+                    <svg>
+                      <use xlink:href="/img/sprites/svg/symbol/sprite.svg#qr-mob"></use>
+                    </svg><img src="img/robot1.svg" alt="Robot">
+                  </div>
+                  <div class="step2__qr-text step2__free-gift-text">
+                    <p>— Сканируя QR-код, Ваши клиенты смогут Вас прорекламировать на своих страничках в социальных сетях или просто поделиться с <br>Вами впечатлением о своем визите. <br>Смотрите, как все просто!</p><a href="#">подробно, видео
+                      <svg>
+                        <use xlink:href="/img/sprites/svg/symbol/sprite.svg#qr"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="step2__qr_bottom step2__free-gift_bottom">
+                  <div class="step2__free-gift-confirmation">
+                    <h3 class="step2__qr-question step2__free-gift-question">— Ну что, настроим "сарафанное радио"?</h3>
+                    <div class="step2__qr-answer step2__free-gift-answer"><span class="switcher switcher-1">
+                        <input class="step2__free-gift-agree" type="checkbox" id="switcher-1" checked>
+                        <label class="step2__free-gift-label" for="switcher-1"></label></span><span class="switcher-text">Да, попробуем! —</span></div>
+                  </div>
+                  <div class="step2__free-sale">
+                    <p>стоимость услуги:<span>900<span>руб.</span></span></p><span>0<span>руб.</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="step2__video step2__free-gift">
+                <div class="step2__video_top step2__free-gift_top">
+                  <div class="step2__video-img step2__free-gift-img">
+                    <svg>
+                      <use xlink:href="/img/sprites/svg/symbol/sprite.svg#star-mob"></use>
+                    </svg><img src="img/robot1.svg" alt="Robot">
+                  </div>
+                  <div class="step2__video-text step2__free-gift-text">
+                    <p>— Получая обратную связь от клиента, Вы сможете не только посмотреть на свой бизнес его глазами, но и попросить меня <br>выгрузить отзыв на популярные Интернет-ресурсы, чтобы поднять свои рейтинги и укрепить репутацию в Сети. Это очень легко, хотите покажу?</p><a href="#">подробно, видео
+                      <svg>
+                        <use xlink:href="/img/sprites/svg/symbol/sprite.svg#star"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="step2__video_bottom step2__free-gift_bottom">
+                  <div class="step2__free-gift-confirmation">
+                    <h3 class="step2__video-question step2__free-gift-question">— Прокачаем Интернет? ;)</h3>
+                    <div class="step2__video-answer step2__free-gift-answer"><span class="switcher switcher-1">
+                        <input class="step2__free-gift-agree" type="checkbox" id="switcher-2" checked="true">
+                        <label class="step2__free-gift-label" for="switcher-2"></label></span><span class="switcher-text">Да, конечно! —</span></div>
+                  </div>
+                  <div class="step2__free-sale">
+                    <p>стоимость услуги:<span>900<span>руб.</span></span></p><span>0<span>руб.</span></span>
+                  </div>
+                </div>
+              </div>
+              <button class="main-btn step2-btn" type="button" data-btn="step-btn">Готово!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step4 current-step" data-step="step4">
+        <div class="step3__layer">
+          <div class="center">
+            <div class="f-container">
+              <div class="step3-payment">
+                <div class="step3-wrap">
+                  <div class="step3-wrapper">
+                    <div class="step3-image__wrap">
+                      <h3 class="step3-count">03.</h3><img src="img/robot4.svg" alt="Robot">
+                    </div>
+                    <p class="step3-text payment">Оплата.</p>
+                  </div>
+                  <p class="step3-text">— Супер ! У меня все готово !<br>Для получения новых клиентов Вам остается лишь оплатить подключение к сервису Zoome.</p>
+                </div>
+                <div class="step3-calc">
+                  <p class="step3-calc__title">Реклама через блогеров:</p>
+                  <div class="step-calc__sum"><span>1990</span>руб.</div>
+                  <p class="step3-calc__title">QR код:</p>
+                  <div class="step-calc__sum free">
+                    <p><span>900<span>руб.</span></span></p><span>бесплатно</span>
+                  </div>
+                  <p class="step3-calc__title">Выгрузка отзывов:</p>
+                  <div class="step-calc__sum free">
+                    <p><span>900<span>руб.</span></span></p><span>бесплатно</span>
+                  </div>
+                  <div class="step3-total">
+                    <p class="step3-total__text">Итого:</p><span>3790 &#8381;</span><span>1990 &#8381;</span>
+                  </div>
+                  <div class="step3-total__payment-btn">
+                    <button class="main-btn step3-btn" form="step1__form" type="submit" data-btn="step-btn">Оплатить</button>
+                    <div class="step3-images__wrapper"><img class="step3-hidden__img" src="img/payment2.svg" alt="Payment"><img src="img/payment.svg" alt="Payment"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="step3-message"><img class="first-message" src="img/message.png" alt="Message">
+                <div class="step3-important__text"><img src="img/message.png" alt="Message">Важное сообщение.</div>
+                <h3 class="step3-important__title">Zoome вернет Вам деньги, если:</h3>
+                <p class="step3-important__paragraph">Вы не получите реализованных <br>рекламных заявок <span>в течение 7 дней.</span></p>
+                <p class="step3-important__paragraph">Отказов от блогеров будет <span>больше 70%.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="thanks step5 current-step" data-step="step5">
+      <div class="thanks__layer">
+        <div class="center">
+          <div class="f-container">
+            <div class="thanks__content">
+              <svg class="thanks__arrow">
+                <use xlink:href="/img/sprites/svg/symbol/sprite.svg#arrow-down_big"></use>
+              </svg><img src="img/robot2.svg" alt="Robot">
+              <div class="thanks__textes">
+                <div class="thanks__textes-wrap"><img src="img/robot2.svg" alt="Robot">
+                  <h3 class="thanks__name">Спасибо, Николь!</h3>
+                </div>
+                <p class="thanks__subtitle">— Ну что, Я побежал настраивать Ваш личный <br>кабинет, а вы пока_</p>
+                <ul class="thanks__list">
+                  <li class="thanks__list-item">
+                    <svg>
+                      <use xlink:href="/img/sprites/svg/symbol/sprite.svg#success"></use>
+                    </svg>скачайте мобильное приложение
+                  </li>
+                  <li class="thanks__list-item">войдите в личный кабинет сами и включите <br>push-уведомления
+                    <svg>
+                      <use xlink:href="/img/sprites/svg/symbol/sprite.svg#success"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="thanks__paragraph">Как только все будет готово, я вам дам знать :)</p>
+                <p class="thanks__goodbye">До встречи в Zoome!</p>
+              </div>
+            </div>
+            <div class="free-download">
+              <h3 class="free-download__text">Скачайте бесплатно!</h3>
+              <div class="free-download__links"><a class="free-download__link" href="#"><img src="img/app-store.png" alt="AppStore"></a><a class="free-download__link" href="#"><img src="img/google-play.png" alt="GooglePlay"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- include pug/layouts/footer-->
+    <script src="js/libs.min.js?v=1570041626520"></script>
+    <script src="js/script.min.js?v=1570041626520"></script>
+  </body>
+</html>
